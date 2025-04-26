@@ -151,6 +151,7 @@ sns.scatterplot(
     x="tenure", y="MonthlyCharges", hue="Segment", size="TotalCharges", data=df
 )
 plt.legend(bbox_to_anchor=(1.05, 1), loc="upper left")
+plt.tight_layout()
 plt.title("Customer Segments")
 plt.savefig("customer_segments.png")
 plt.show()
